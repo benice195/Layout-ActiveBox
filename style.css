@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Muli|Noto+Serif|Oxygen');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 1200px;
+    line-height: 1;
+    font-family: 'Muli', sans-serif;
+    /*font-family: 'Oxygen', sans-serif;
+    font-family: 'Arvo', serif;
+    font-family: 'Noto Serif', serif;*/
+}
+
+/*<-----------------------JUMBOTRON + NAV------------------------>*/
+
+.jumbo {
+    background-image: url('http://www.tapeta-tekstura-kwiaty-odygi-czarne-tlo.na-pulpit.com/zdjecia/tekstura-kwiaty-odygi-czarne-tlo.jpeg');
+    background-size: cover;
+    padding-bottom: 200px;
+}
+.jumbo .intro {
+    padding-top: 150px;
+}
+nav {
+    flex-direction: row;
+    padding:20px;
+    border-bottom: 2px solid papayawhip;
+}
+.logo {
+    display: inline-flex;
+    width: 20%;
+}
+.logo p {
+    font-size: 32px;
+}
+.logo p:nth-child(1) {
+    font-weight: bolder;
+}
+.navbar {
+    width: 80%;
+    text-align: right;
+}
+.navbar a {
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+/* <--------------------------- CLEARFIX ------------------------>*/
+
+.row:before, .row:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/*<---------------------------------------------------------------->*/
+
+.intro p {
+    border-radius: 10px;
+    background-color: transparent;
+}
+.intro p:nth-child(1) {
+    font-size: 42px;
+    max-width: 557px;
+    margin-top: 18%;
+}
+.intro p:nth-child(2) {
+    max-width: 750px;
+}
+.intro .more {
+    width: 129px;
+    font-size: 14px;
+    padding: 10px 2px;
+    background-color: indianred;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+/*<----------------------- section technology -----------------------> */
+
+.technology {
+    padding: 100px 0px;
+}
+.tech {
+    margin: 0px 10px;
+}
+.tech i {
+    font-size: 71px;
+    color: indianred;
+}
+.top, .bottom {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/*<--------------------------- SECTION GRID1 --------------------------> */
+
+.col-3 {
+    width: 25%;
+}
+.grid1 .img {
+    max-height:300px;
+}
+.grid1 .img img{
+    border: 2px solid white;
+}
+.grid1 .img .hidden {
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.grid1 .img .hidden p:nth-child(1) {
+    margin-top: 128px;
+}
+.grid1 .img:hover .hidden {
+    visibility: visible;
+    background-color: rgba(247, 79, 79, 0.9);
+}
+
+/* <----------------------- section persons -----------------------> */
+
+.persons {
+    max-width: 800px;
+}
+.per {
+    max-height: 400px;
+}
+.per p:nth-child(3) {
+    font-size: smaller;
+}
+.per i {
+    height: 25px;
+    width: 25px;
+    border: 1px solid grey;
+    padding: 2px;
+}
+.per i:hover {
+    color:white;
+    border-color: rgb(247, 79, 79);
+}
+
+/* <-------------- section personWoman + carousel ------------------> */
+
+.col-6 {
+    width: 50%;
+}
+.kar {
+    float:right;
+}
+#carousel {
+    border: 2px solid black;
+    overflow: hidden;
+}
+#carousel ul {
+    width: 2980px;
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+#carousel li {
+    max-height:400px;
+}
+#carousel ul, #carousel li {
+    list-style-type: none;
+}
+.carou {
+    top: 65%;
+    left: 6%;
+    width: 500px;
+}
+
+/*<-------------------------- section start -------------------------->*/
+
+.start p:nth-child(1) {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.start p:nth-child(3) {
+    padding:20px 0px;
+    width: 200px;
+}
+.start p:nth-child(3):hover {
+    background-color: purple;
+}
+
+/*<--------------------------- footer --------------------------------->*/
+
+.footer1 {
+    max-width: 900px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.footer1 .left, .footer1 .middle, .footer1 .right {
+    width: 33%;
+    font-size: 18px;
+}
+.middle i {
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 4px;
+}
+.middle .fa-facebook, .middle .fa-twitter, .middle .fa-linkedin {
+    width: 35px;
+}
+.middle i:hover {
+    background-color: rgb(99, 62, 221);
+    border: none;
+}
+
+/*<------------------------------- footer2 -------------------------------->*/
+
+.footer2 {
+    font-size: 16px;
+    background-color: black;
+    padding: 20px 0px;
+}
+
+/*<------------------------------------------------------------------------->*/
+
+nav, .top, .bottom {
+    display: flex;
+}
+.logo p, #carousel ul, .footer2 {
+    margin: 0;
+}
+.logo p:nth-child(1), .per i {
+    color: grey;
+}
+.logo p:nth-child(2), .navbar a, .intro p, .intro .more, .grid1 .img .hidden p, .carou, .start p:nth-child(3), .start a, .middle i, .middle i:hover, .footer2 {
+    color: white;
+}
+.navbar, .intro p:nth-child(2), .per {
+    padding: 10px;
+}
+.navbar a, .intro .more a, .start a {
+    text-decoration: none;
+}
+.intro .more a, .start p:nth-child(1) {
+    color: black;
+}
+.intro .more:hover, .intro .more a:hover, footer, .middle i {
+    background-color: rgb(59, 89, 152);
+}
+.intro .more a:hover, .per p:nth-child(3), .navbar a:hover {
+    color: rgb(247, 79, 79);
+}
+.logo p, .navbar a, .intro p:nth-child(1), .intro .more, .tech h2, .grid1 .img .hidden p:nth-child(1), .per p:nth-child(3), .start p:nth-child(2), .start p:nth-child(3), .footer1 .left p:nth-child(1), .footer1 .middle p:nth-child(1), .footer1 .right p:nth-child(1) {
+    text-transform: uppercase;
+} 
+.intro p:nth-child(1), .intro p:nth-child(2), .intro .more, .tech, .grid1 .img .hidden, .per i, .start, .footer1, .footer2 {
+    text-align: center;
+}
+body, .intro p:nth-child(1), .intro p:nth-child(2), .intro .more, .persons, .start, .start p:nth-child(3), .footer1 {
+    margin: 0 auto;
+}
+.intro p:nth-child(2), .per i, .start p:nth-child(2), .footer1 .left p:nth-child(1), .footer1 .middle p:nth-child(1), .footer1 .right p:nth-child(1) {
+    font-size: 20px;
+}
+.intro p:nth-child(2), .intro .more, .top, .bottom {
+    margin-top: 100px;
+}
+.intro .more:hover, .start p:nth-child(3):hover {
+    cursor: pointer;
+}
+.intro .more a:visited, .intro .more a:active, .intro .more a:focus {
+    color: purple;
+}
+.tech, .grid1 .img, .per, .pictureWoman, #carousel li, .footer1 .left, .footer1 .middle, .footer1 .right {
+    float: left;
+}
+.tech, .per {
+    width: 25%;
+}
+.grid1, .persons, .about, .start {
+    padding-bottom: 150px;
+}
+.grid1 .img, #carousel li {
+    position: relative;
+}
+.grid1 .img img, .grid1 .img .hidden, .per img, .pictureWoman img {
+    width: 100%;
+}
+.grid1 .img img, .grid1 .img .hidden {
+    height: 300px;
+}
+.grid1 .img .hidden, .carou {
+    position: absolute;
+}
+.grid1 .img .hidden p:nth-child(1), .per p:nth-child(2), .carou {
+    font-size: larger;
+}
+.grid1 .img .hidden p:nth-child(1), .per p:nth-child(2), .carou, .start p:nth-child(2), .footer1 .left p:nth-child(1), .footer1 .middle p:nth-child(1), .footer1 .right p:nth-child(1), .footer2 {
+    font-weight: bold;
+}
+.per i:hover, .start p:nth-child(3) {
+    background-color: rgb(247, 79, 79);
+}
+.kar, .pictureWoman img, #carousel, #carousel img {
+    height: 400px;
+}
+#carousel, #carousel ul {
+    padding: 0;
+}
+#carousel, #carousel li, #carousel img {
+    max-width: 596px;
+}
+
+@media(max-width: 850px) {
+    nav {
+        flex-direction: block;
+        height: 350px;
+    }
+    .navbar {
+        margin-top: 50px;
+    }
+    .navbar a {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+    }
+    .logo {
+        justify-content: center;
+        padding-top: 135px;
+    }
+    .logo p {
+        font-size:50px;
+    }
+    .navbar a, .logo {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        height: 400px;
+    }
+    .logo {
+        padding-top: 0;
+    }
+    .technology {
+        padding: 0px;
+    }
+    .tech {
+        width: 70%;
+        margin: 0px 15% 0px;
+    }
+    .per img {
+        width: 27%;
+    } 
+    .per p {
+        width: 53%;
+        padding: 5px;
+    }
+    .kar {
+        margin: 0px;
+    }
+    .footer1 .left, .footer1 .middle, .footer1 .right {
+        width: 33%;
+        font-size: 18px;
+    }
+    .carou {
+        top: 30%;
+    }
+    .carou p {
+        height: 100px;
+    }
+    nav, .top, .bottom {
+        display: block;
+    }
+    .navbar, .top, .bottom, .per {
+        text-align: center;
+    }
+    .navbar, .top, .bottom, .per, .pictureWoman, .footer1 .left, .footer1 .middle, .footer1 .right, .kar {
+        width: 100%;
+    }
+    .tech, .per, .kar, .grid1 .img, .pictureWoman, .footer1 .left, .footer1 .middle, .footer1 .right {
+        float: none;
+    } 
+    .footer1 .left, .footer1 .middle, .footer1 .right, .carou blockquote {
+        padding: 10px;
+    }
+    .grid1 .img, .carou p {
+        width: 50%;
+    }
+    .grid1 .img, .per p, #carousel {
+        margin: 0 auto;
+    }
+}
