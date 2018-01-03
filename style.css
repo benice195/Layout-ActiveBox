@@ -159,6 +159,9 @@ nav {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
+#carousel img {
+    width: 100%;
+}
 #carousel li {
     max-height:400px;
 }
@@ -303,7 +306,7 @@ body, .intro p:nth-child(1), .intro p:nth-child(2), .intro .more, .persons, .sta
 #carousel, #carousel ul {
     padding: 0;
 }
-#carousel, #carousel li, #carousel img {
+#carousel, #carousel li {
     max-width: 596px;
 }
 
